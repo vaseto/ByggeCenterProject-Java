@@ -1,0 +1,1757 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>7</zoom_level>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1435</x>
+      <y>1204</y>
+      <w>84</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>bg=green
+Person
+--
+name : String
+phone : String
+address : String 
+e-mail : String
+id : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>2695</x>
+      <y>819</y>
+      <w>98</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+ControlLayer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>2667</x>
+      <y>1225</y>
+      <w>98</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>bg=green
+ModelLayer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Note</type>
+    <coordinates>
+      <x>2758</x>
+      <y>161</y>
+      <w>98</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>bg=red
+UILayer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1253</x>
+      <y>1323</y>
+      <w>112</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>bg=green
+Employee
+--
+bankAccount : String 
+salary : double
+position : String 
+productsSold :double
+rents : ArrayList&lt;Rent&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1379</x>
+      <y>1323</y>
+      <w>147</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>bg=green
+Customer
+--
+group : String 
+balance: double
+creditCard No : String
+orderedGoods : ArrayList&lt;Item&gt;
+bill: double
+productsBough : double
+rents : ArrayList&lt;Rent&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1547</x>
+      <y>1323</y>
+      <w>175</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>bg=green
+Contractor
+--
+requestsForReorder: ArrayList&lt;Item&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1407</x>
+      <y>1141</y>
+      <w>182</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>bg=green
+PersonContainer
+--
+persons : ArrayList&lt;Person&gt;
+--
+(+)getPeople(file) : ArrayList</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1463</x>
+      <y>1274</y>
+      <w>21</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1323</x>
+      <y>1288</y>
+      <w>266</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1323</x>
+      <y>1295</y>
+      <w>21</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1456</x>
+      <y>1169</y>
+      <w>34</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;35;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1379</x>
+      <y>896</y>
+      <w>259</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+PersonCtrl
+--
+personCont : PersonContainer
+--
+(#)save(fileName,ArrayList):void
+(+)loadPeople(fileName) : ArrayList
+(+)getPeople(fileName) : ArrayList
+(+)findPerson(id,ArrayList) : Person
+(+)removePerson(id,ArrayList,fileName) :void
+(+)showAllPeople(ArrayList) : void
+(+)changeName(id,str,ArrayList,Person,fileName) : void
+(+)changeAddress(id,str,ArrayList,Person,fileName) : void
+(+)changeEmail(id,str,ArrayList,Person,fileName)0 0: void
+(+)changeId(id,str,ArrayList,Person,fileName) : void
+(+)changePhonee(id,str,ArrayList,Person,fileName) : void
+(+)getName(id,ArrayList) : String
+(+)getAddress(id,ArrayList) : String
+(+)getEmail(id,ArrayList) : String
+(+)getId(id,ArrayList) : String
+(+)getPhone(id,ArrayList) : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1785</x>
+      <y>56</y>
+      <w>175</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>bg=red
+UIInputClass
+--
+reader : Scanner
+--
+(#)checkIfDouble() : double
+(#)checkIfString() : String
+(#)inputString() : String
+(#)inputDouble() : double
+(#)inputNotRestrictedString() : String
+(#)newLine() : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1470</x>
+      <y>1099</y>
+      <w>34</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;42;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1750</x>
+      <y>742</y>
+      <w>161</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+ContractorCtrl
+--
+contractors : ArrayList
+fileName : String
+--
+(+)createContractor(name,address,
+(+)phone,email,id,ArrayList) :void
+(+)findContractor(id) : Contractor
+(+)getFileName() : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1351</x>
+      <y>672</y>
+      <w>168</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+CustomerCtrl
+--
+customers : ArrayList
+fileName : String
+--
+(+)createCustomer(name,address,
+phone,email,id,group,balance,
+creditCardNo,bill,ArrayList) :void
+(+)findCustomerr(id) : Customer
+(+)getFileName() : String
+(+)changeGroup(id,str) : void
+(+)changeBalance(id,str) : void
+(+)changeBill(id,str) : void
+(+)getBalance(id) : double
+(+)getBill(id) : double
+(+)getGroup(id) : double
+(+)getOrderedGoods(id) : ArrayList</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1540</x>
+      <y>672</y>
+      <w>168</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+EmployeeCtrl
+--
+employees : ArrayList
+fileName : String
+--
+(+)createEmployee(name,address,
+phone,email,id,bankAcc,salary,
+position,ArrayList) :void
+(+)findEmployee(id) : Employee
+(+)getFileName() : String
+(+)changePosition(id,str) : void
+(+)changeSalary(id,str) : void
+(+)changeBankAcc(id,str) : void
+(+)getBankAcc(id) : String
+(+)getSalary(id) : double
+(+)getPosition(id) : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1449</x>
+      <y>1260</y>
+      <w>34</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;63;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1799</x>
+      <y>231</y>
+      <w>133</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>bg=red
+MainMenu
+--
+manUI : ManagerrUI
+empUI : EmployeeUI
+--
+(#) logout() : void
+(#)login() : int
+(#) startMainMenu() : double
+(-)writeStartMenu() : double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1246</x>
+      <y>343</y>
+      <w>182</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>bg=red
+CustomerUI
+--
+custCtrl : CustomerCtrl
+reader : Scanner
+currentCust : String
+customer : ArrayList
+--
+(#)setCurrentCustomer(newCust) : void
+(#)getCurrentCustomer() : String
+(#)createCustomer : void
+(#)getCustomers() : ArrayList
+(#)getFileName() : String
+(#)makePayment(price,amount) : double
+(-)startCustomerMenu() : void
+(-)startUpdateMenu(id) : void
+(#)printUpdateMenu() : double
+(-)startFoundCustomerMenu () : void
+(-)inputGroup() : String
+(-)inputBalanace() : double
+(-)inputCreditCard() : String
+(-)inputBill() : double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1666</x>
+      <y>385</y>
+      <w>175</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>bg=red
+ManagerUI
+--
+employees : ArrayList
+empCtrl : EmployeeCtrl
+file : String
+--
+(-)createEmploye() : void
+(-)writeManagerMenu() : double
+(-)printEmployeeMenu() : double
+(#)ManagerMainMenu() : void
+(#)findWorker(name,id) : int
+(-)startUpdateMenu(id) : void
+(#)printUpdateMenu() : double
+(#)startFoundEmployeeMenu() : void
+(-)inputBankAccount() : String
+(-)inputPosition() : String
+(-)inputSalary() : double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1869</x>
+      <y>413</y>
+      <w>175</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>bg=red
+ContractorUI
+--
+contCtrl : ContractorCtrl
+currentCont : String
+contractors : ArrayList
+--
+(-)createContractor() : void
+(#)startContractorMenu() : void
+(-) printContractorMenu() : double
+(-)startUpdateMenu(id) : void
+(#)printUpdateMenu() : double
+(-) startFoundContractorMenu() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1400</x>
+      <y>546</y>
+      <w>34</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;126;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1876</x>
+      <y>539</y>
+      <w>34</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;203;21;21</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>854</x>
+      <y>1260</y>
+      <w>21</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>770</x>
+      <y>1267</y>
+      <w>182</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;240.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>931</x>
+      <y>1274</y>
+      <w>21</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>770</x>
+      <y>1274</y>
+      <w>21</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>735</x>
+      <y>1330</y>
+      <w>70</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>bg=green
+Order
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>819</x>
+      <y>1337</y>
+      <w>70</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>bg=green
+Product Sale
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>910</x>
+      <y>1344</y>
+      <w>119</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>bg=green
+Rent
+--
+period : int
+borrowDate: String 
+copy:String
+machineBarcode:String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>798</x>
+      <y>987</y>
+      <w>154</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>bg=green
+TradeContainer                             1
+--
+orders : ArrayList&lt;Order&gt;
+rents: ArrayList&lt;Rent&gt;
+sales: LinkedList&lt;ProductSale&gt;
+fileNameSale: String 
+fileNameOrder: String
+fileNameRent: String
+
+
+--
+(+)getRents() : ArrayList&lt;Rent&gt;
+(+)getOrders() : ArrayList&lt;Order&gt;
+(+)getTradeSale(): LinkedList&lt;Sale&gt;
+(-)getTradeObjects()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>847</x>
+      <y>1106</y>
+      <w>34</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;70;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>728</x>
+      <y>623</y>
+      <w>308</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+RentCtrl
+--
+rents :ArrayList&lt;Rent&gt;
+fileName: String
+machineCtrl: MachineCtrl
+
+--
+newRent( int dicount, String custID, String empID,String id, int period,
+String borrowDate, String copyID, String machineBarcode) 
+getRent(id: String)
+getPeriod(id: String)
+getBorrowDate(id: String)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>833</x>
+      <y>1176</y>
+      <w>84</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>/Trade/
+bg=green
+--
+price : double
+custID : String
+empID : String
+discount : int
+id: String
+--
+toString()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>707</x>
+      <y>896</y>
+      <w>174</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>161;91;161;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>581</x>
+      <y>840</y>
+      <w>147</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+TradeCtrl
+
+--
+tradeCont : TradeContainer
+
+--
+removeTrade(id: String)
+findTrade(id: String)
+getTradePrice(id:String)
+getTradeCustID(id:String)
+getTradeEmplID(id: String)
+storeTradeInFile(String filename, ArrayList collection)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>511</x>
+      <y>616</y>
+      <w>203</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+OrderCtrl
+
+--
+
+ orders: ArrayList&lt;Order&gt;
+fileName: String
+--
+newOrder(int price, int dicount,
+String custID, String empID, String id)
+findOrder(id: String)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>616</x>
+      <y>805</y>
+      <w>202</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;189;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>784</x>
+      <y>728</y>
+      <w>34</w>
+      <h>111</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;98</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1092</x>
+      <y>658</y>
+      <w>196</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+ProductSaleCtrl
+--
+sales: LinkedList&lt;ProductSale&gt; 
+tr : TradeContainer
+products : LinkedList&lt;Product&gt;
+prCtrl : ProductCtrl
+itrCtrl : ItemsReorderCtrl
+--
+(+)newProductSale(int price, int dicount,
+String custID,String empID,String id)
+(-)removeSales()
+(+)getSale(String id)
+(+)removeSale(String id)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2135</x>
+      <y>1225</y>
+      <w>77</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>bg=green
+/Item/
+--
+name : String
+barcode : String
+price : double
+quantity : int
+category : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2198</x>
+      <y>1428</y>
+      <w>112</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>bg=green
+Copy
+--
+SerialNumber: String
+status : boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2240</x>
+      <y>1393</y>
+      <w>21</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2107</x>
+      <y>1323</y>
+      <w>21</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2107</x>
+      <y>1316</y>
+      <w>147</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2233</x>
+      <y>1323</y>
+      <w>21</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2163</x>
+      <y>1302</y>
+      <w>21</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>2100</x>
+      <y>1113</y>
+      <w>175</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>bg=green
+ItemContainer                                      1
+--
+
+pruducts:ArrayList&lt;Products&gt;
+machines: ArrayList&lt;Machine&gt;
+
+--
+(+)getProducts() : ArrayList&lt;Product&gt;
+(+)getMachines () : ArrayList&lt;Machines&gt;
+- getMachineObjects()
+- getProjectObjects()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2107</x>
+      <y>966</y>
+      <w>34</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;147;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2198</x>
+      <y>1057</y>
+      <w>34</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;56;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>2121</x>
+      <y>658</y>
+      <w>245</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+
+ItemCtrl
+--
+(-)items: ItemContainer
+--
+
+
+(+)getItem(barcode: String):Machine 
+(+)storeItemInFile()
+
+
+(+) removeItem(barcode: String)
+(+) getItemName(barcode : String): String
+(+) getItemPrice(barcode : String): double
+(+) getItemQuantity(barcode : String): int
+(+) getItemCategory(barcode : String): String
+(+) getItemsByCategory(category: String): Stack&lt;Item&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2128</x>
+      <y>784</y>
+      <w>174</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;161;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2268</x>
+      <y>784</y>
+      <w>34</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2128</x>
+      <y>784</y>
+      <w>34</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1456</x>
+      <y>350</y>
+      <w>182</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>bg=red
+EmployeeUI
+--
+empCtrl : EmployeeCtrl
+
+currentEmp : String
+employees : ArrayList
+prCtrl : ProductCtrl
+custUI : CustomerUI
+prSaleCtrl : ProductSaleCtrl
+totPrice : double
+currentProduct : String
+--
+(#)getTotalPrice() : double
+(#)setCurrentEmployees(emp) : void
+(#)checkIfCustomer() : String
+(#)checkIfY(account) : boolean
+(#)RegisterOrder() : void
+(#)makeProductSale() : void
+(-)makesale() : boolean
+(-)checkForCustomer() : void
+(-)proceed() : boolean
+(-)endSale() : boolean
+(-)printReceipt(change) : void
+(-)getFileName() : String
+(#)EmployeeMenu() : void
+(-)writeEmployeeMenu() : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1848</x>
+      <y>133</y>
+      <w>28</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>21;21;21;98</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1337</x>
+      <y>301</y>
+      <w>426</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;413;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1960</x>
+      <y>294</y>
+      <w>412</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;399;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1337</x>
+      <y>301</y>
+      <w>34</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1526</x>
+      <y>301</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;49</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1729</x>
+      <y>301</y>
+      <w>34</w>
+      <h>97</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;84</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1960</x>
+      <y>294</y>
+      <w>34</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;119</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2142</x>
+      <y>294</y>
+      <w>34</w>
+      <h>97</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;84</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2338</x>
+      <y>294</y>
+      <w>28</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;91</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1526</x>
+      <y>231</y>
+      <w>34</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;91</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2177</x>
+      <y>175</y>
+      <w>34</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;140</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1848</x>
+      <y>175</y>
+      <w>357</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;350;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1414</x>
+      <y>847</y>
+      <w>426</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;413;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1414</x>
+      <y>840</y>
+      <w>34</w>
+      <h>41</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;28</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1589</x>
+      <y>826</y>
+      <w>34</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;42;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1806</x>
+      <y>826</y>
+      <w>34</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;42;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1484</x>
+      <y>847</y>
+      <w>34</w>
+      <h>62</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>21;49;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1568</x>
+      <y>602</y>
+      <w>34</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;70;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1407</x>
+      <y>371</y>
+      <w>62</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;21;49;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1666</x>
+      <y>546</y>
+      <w>34</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;126;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2086</x>
+      <y>490</y>
+      <w>34</w>
+      <h>377</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;364;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2373</x>
+      <y>560</y>
+      <w>28</w>
+      <h>287</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;280;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>2457</x>
+      <y>385</y>
+      <w>182</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>bg=red
+EmployeeRent
+--
+machine: MachineCtrl
+rent:RentCtrl
+barcode:String
+isTrue:boolean
+--
+(#) rentMenu()
+(-) rent()
+(-) printAvailableMachineByBarcode()
+(-) printAvailableCopies()
+(-) creatingRent()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1463</x>
+      <y>0</y>
+      <w>182</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>bg=red
+PersonUI
+--
+persCtrl : PersonCtrl
+currentPers : String
+UIclass : UIInputClass
+--
+(#)baciscs : String[]
+(#)showAll(arrayList) : void
+(#)removePerson(id,persons,fileName) : void
+(#)findPerson(persons) : boolean
+(#)getCurrentPerson : String
+(#)setCurrentPerson(str) : void
+(#)inputName() : String
+(#)inputDouble() : double
+(#)inputInteger() : int
+(#)inputString() : String
+(#)notRestrictedString() : String
+(#)newLine() : void
+(#)inputAddress() : String
+(#)inputPhone() : String
+(#)inputEmail() : String
+(#)inputId() : String
+(#)printUpdateMenu() : double
+(#)foundPersonMenu() : double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1624</x>
+      <y>70</y>
+      <w>168</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>161;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>2184</x>
+      <y>840</y>
+      <w>322</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+MachineCtrl
+--
+(-)ArrayList&lt;Machine&gt; machines;
+
+--
+(+)createItem(String name, String barcode,
+double price,int quantity, String category)
+(+) createCopy(String machineBarcode,
+	String serialNumber, boolean status)
+
+(+) getCopy(machineBarcode: String,
+serialNumber: String)
+(+) getCopiesOfMachine(barcode: String): ArrayList&lt;Copy&gt;
+(+) getCopy(serialNumber: String)
+(+) getCopyStatus(serialNumber:String)
+(+) getAvailableMachinebyCategory(String category): Stack&lt;Machine&gt;
+
+(+) getAvailableCopiesOfMachinebyBarcode(String barcode):Stack&lt;Copy&gt;
+(+) showAll()
+(+) showAllCopies()
+(+) showAllCopiesOfMachine(barcode: String)
+(+) ifEmpty(): boolean
+(+)getCopiesOfMachine(String barcode): ArrayList&lt;Copy&gt; 
+(+) getcopies(String barcode):boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1946</x>
+      <y>854</y>
+      <w>224</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+ProductsCtrl
+--
+(-)ArrayList&lt;Machine&gt; machines;
+
+--
+(+)createItem(String name, String barcode,
+double price,int quantity, String category,
+location: String, minimum: String,maximum;String)
+(+)reorderProducts()// not implemented
+(+)setMaximumBorder(String barcode)
+(+)getMaxmumBroder(String barcode)
+(+)setMinimumBorder(String barcode)
+(+)getMinimumBorder(String barcode)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1617</x>
+      <y>560</y>
+      <w>433</w>
+      <h>307</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>420;294;420;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1204</x>
+      <y>560</y>
+      <w>265</w>
+      <h>111</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;98;21;70;21;21;252;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>2261</x>
+      <y>385</y>
+      <w>175</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>bg=red
+MachineUI
+--
+machCtrl
+--
+(-)writeStarttMenu() : int
+(#) getCurrentMachine() : String
+(#)getCurrentCopy() : String
+(-)startMenu() : void
+(#)ifEmpty() : boolean
+(#)showAllCopiesOFMachine() : void
+(#)createMachine() : void
+(#)findMachine() : void
+(#)findCopy() : void 
+(#)findCopyBySerailNumb() : void
+(#) getAllCopiesOfMachine() : void
+(#)createCopy() : void
+(#)inputMachBarcode() : String
+(#)inputCopySer() : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>2093</x>
+      <y>378</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>bg=red
+ProductUI
+--
+prCtrl : ProductCtrl
+reader : Scanner 
+currentProduct : String
+--
+(#)ProductMenu() : void
+(-)writeProductMenu() : double
+(#) createItem() : void
+(#)findItem() : String
+(-)startUpdateMenu(id) : void
+(#)printUpdateMenu() : double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2338</x>
+      <y>294</y>
+      <w>161</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;154;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2471</x>
+      <y>294</y>
+      <w>28</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;91</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2457</x>
+      <y>504</y>
+      <w>28</w>
+      <h>343</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;336;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1015</x>
+      <y>616</y>
+      <w>1476</w>
+      <h>41</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;28;1463;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2205</x>
+      <y>763</y>
+      <w>34</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>21;21;21;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1015</x>
+      <y>343</y>
+      <w>182</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>bg=red
+OrderUI
+--
+ordCtrl : OrderCtrl
+empUI : EmployeeUI
+custCtrl : CustomerCtrl
+--
+(#)findOrder : String
+(#)RegisterOreder() : void
+(#)StartOrderMenu : void
+(-)activateOrder() : void
+(-)writeOrderMenu() : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1078</x>
+      <y>441</y>
+      <w>307</w>
+      <h>188</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>294;175;21;175;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1351</x>
+      <y>595</y>
+      <w>34</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;77;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1351</x>
+      <y>595</y>
+      <w>118</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>105;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1099</x>
+      <y>273</y>
+      <w>34</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1099</x>
+      <y>273</y>
+      <w>678</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>665;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1743</x>
+      <y>175</y>
+      <w>133</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>126;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1743</x>
+      <y>175</y>
+      <w>34</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;119;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1617</x>
+      <y>336</y>
+      <w>195</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;21;182;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1799</x>
+      <y>343</y>
+      <w>34</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;42;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1694</x>
+      <y>903</y>
+      <w>217</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+ItemsReorderCtrl
+--
+products : Queee&lt;Product&gt;
+container : ItemsReorderContiner
+--
+(+)storeItemInFile() : void
+(+)addProductForReorder(product) : void
+(+)getProductsForReorder() : Queue&lt;Product&gt;
+(+)makeReorder() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>847</x>
+      <y>749</y>
+      <w>258</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;245;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>847</x>
+      <y>749</y>
+      <w>34</w>
+      <h>181</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;168;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>686</x>
+      <y>805</y>
+      <w>34</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>21;35;21;21</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1568</x>
+      <y>1295</y>
+      <w>21</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>2156</x>
+      <y>1183</y>
+      <w>34</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>21;42;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1771</x>
+      <y>1113</y>
+      <w>182</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>bg=green
+ItemsReoderContainer                            1
+--
+pruducts:Queue&lt;Products&gt;
+ItemsReorderContainer :instance
+--
+
+(+)getProductForReorder() : void
+(+)getProductReorder() : Queue&lt;Product&gt; </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2198</x>
+      <y>1351</y>
+      <w>112</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>bg=green
+Machine
+--
+copies:ArrayList&lt;Copy&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2051</x>
+      <y>1351</y>
+      <w>91</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>bg=green
+Product
+--
+location : String
+minimum: int
+maximum: int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1932</x>
+      <y>1141</y>
+      <w>160</w>
+      <h>223</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>147;210;147;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1813</x>
+      <y>987</y>
+      <w>34</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;126;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1617</x>
+      <y>588</y>
+      <w>139</w>
+      <h>321</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>126;308;126;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>616</x>
+      <y>791</y>
+      <w>34</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>0</x>
+      <y>245</y>
+      <w>111</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>21;21;98;21</additional_attributes>
+  </element>
+</diagram>
